@@ -1,4 +1,11 @@
 body {
+  transition: background-color 0.5s ease;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: Arial, sans-serif;
     background-color: #000000;
     margin: 0;
@@ -50,3 +57,30 @@ body {
   .notification.show {
     display: block;
   }
+  
+  #toggleBackground {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  #toggleBackground img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    transition: transform 0.3s ease; /* Add smooth transition */
+  }
+  
+  #toggleBackground:hover img {
+    transform: scale(1.2); /* Increase size on hover */
+  }
+  
+  #toggleBackground:focus {
+    outline: none; /* Remove default focus outline */
+  }
+
+  
+  
