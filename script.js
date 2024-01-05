@@ -1,5 +1,6 @@
 document.getElementById('paymentForm').addEventListener('submit', function(event) {
     event.preventDefault();
+    // a
   
     const cardNumber = document.getElementById('cardNumber').value;
     const sanitizedCardNumber = cardNumber.replace(/\s/g, ''); // Remove spaces
